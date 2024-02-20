@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0 ;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+body
+{
+	background: #889BD5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container
+{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: #ffffff;
+	margin: 50px;
+	border: solid 10px rgba(41, 41, 40, 0.87);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+	z-index: 0;
+}
+/*Parte sinistra*/
+.container .left_Side
+{
+	position: relative;
+	background: darkkhaki;
+	padding: 40px;
+	border-radius: 50px;
+	box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+.container{
+	border-radius: 60px;
+}
+.profileText
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+
+} 
+.profileText .imgBox
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profileText .imgBox img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profileText h2
+{
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+.profileText h2 span
+{
+	font-size: 0.8em;
+	font-weight: 300;
+}
+.ContacstInfo
+{
+	padding-top: 40px;
+}
+.title
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.ContacstInfo ul
+{
+	position: relative;
+}
+.ContacstInfo ul li
+{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.ContacstInfo ul li .icon
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #3a8431;
+}
+.ContacstInfo ul li span
+{
+	color: #fff;
+	font-weight: 300;
+}
+.ContacstInfo.Formazione li
+{
+	margin-bottom: 15px;
+}
+.ContacstInfo.Formazione h5
+{
+	color: #3a8431;
+	font-weight: 500;
+}
+.ContacstInfo.Formazione h4
+{
+	color: #fff;
+	font-weight: 500;
+}
+.ContacstInfo.lingue .percent
+{
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #081921;
+	display: block;
+	margin-top: 5px;
+}
+.ContacstInfo.lingue .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #5d56ed;
+}
+.interessi
+{
+	position: relative;
+	bottom: -30px;
+}
+.interessi ul li
+{
+	position: relative;
+	list-style: none;
+	margin: 40px 0;
+	cursor: pointer;
+}
+.interessi ul li .icon
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 40px;
+	color: #3a8431;
+}
+.interessi ul li span
+{
+	color: #fff;
+	font-weight: 300;
+}
+.interessi .text 
+{
+	position: relative;
+	right: -40px;
+	top: -5px;
+	color: #fff;
+	font-weight: 700;
+}
+/*Parte sinistra*/
+
+/*Parte destra*/
+ .container .right_Side
+{
+	position: relative;
+	background: #fff;
+	padding: 40px;
+	border-radius: 50px;
+	z-index: 1;
+}
+.about
+{
+	margin-bottom: 50px;
+}
+.title2
+{
+	color: darkkhaki;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+p 
+{
+	color: #1d1b38;
+}
+.box h4
+{
+	text-transform: uppercase;
+	color: #3a8431;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding-top: 30px;
+}
+.skilss .box
+{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	align-items: baseline;
+}
+.skilss .box h4
+{
+	text-transform: uppercase;
+	color: #7f7e8f;
+	font-weight: 500;
+	}
+.skilss .box .percent
+{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: #f0f0f0;
+}
+.skilss .box .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #5d56ed;
+
+}
+.about .skilss .box 
+{
+	right: 40px;
+	display: flex;
+	flex-direction: row;
+}
+.title3
+{
+	color: darkkhaki;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+.exp .text{
+	position: relative;
+	right: -30px;
+}
+.progetti .text p 
+{
+	position: relative;
+	right: -30px;
+}
+.box .anno 
+{
+	color: #3a8431;
+	padding-top: 30px;
+	font-size: 20px;
+	margin-bottom: 18px;
+}
+.exp .box .anno 
+{
+	position: relative;
+	right: -40px;
+	color: #3a8431;
+	padding-top: 30px;
+	font-size: 20px;
+	margin-bottom: 18px;
+}
+.about .capacità
+{
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+/*Parte destra*/
